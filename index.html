@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>BlueLight</title>
+        <link rel="stylesheet" href="src/styles.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/bny7pyg.css" />
+        <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+    <body>
+        <div class="b-wrapper">
+            <header>
+                <a href='./index.html'>
+                    <img class="b-logo" src='./src/img/logo.png'/>
+                </a>
+                <nav>
+                    <p>
+                        <a id='sale'>LAND SALE</a>
+                    </p>
+                    <p>
+                        <a id='game'>GAME</a>
+                    </p>
+                    <p>
+                        <a id='about'>ABOUT</a>
+                    </p>
+                </nav>
+                <img src='./src/img/burger.png' class="burger-menu" alt="'"/>
+            </header>
+            <section class="mobile-menu">
+                <div>
+                    <a href='./index.html'>
+                        <img src="./src/img/logo.png" class='b-logo-menu'/>
+                    </a>
+                    <nav>
+                        <p>
+                            <a id='sale-redirect'>LAND SALE</a>
+                        </p>
+                        <p>
+                            <a id='game-redirect'>GAME</a>
+                        </p>
+                        <p>
+                            <a id='about-redirect'>ABOUT</a>
+                        </p>
+                    </nav>
+                    <img src='./src/img/close.png' class="close-menu">/>
+                </div>
+                <div>
+                    <div class="b-social-mobile">
+                        <div class="b-discord-mobile" onclick="window.open('https://discord.gg/ga8XHFKQ', '_self');"></div>
+                        <div class="b-telegram-mobile" onclick="window.open('https://t.me/bluelightworlds', '_self');"></div>
+                        <div class="b-twitter-mobile" onclick="window.open('http://twitter.com/bluelightworlds', '_self');"></div>
+                        <div class="b-instagram-mobile" onclick="window.open('', '_self');"></div>
+                        <div class="b-youtube-mobile" onclick="window.open('', '_self');"></div>
+                    </div>
+                    <div class="b-footer-items">
+                        <p class="description">© Viewpoint Labs <span class='year'></span></p>
+                        <div class="container-icons-mobile">
+                            <img class='b-extension' src='./src/img/extension.png' alt=''/>
+                            <a href="./privacy.html" class="description privacy">Privacy</a>
+                        </div>
+                    </div>
+                    <p class="description copyright">© Viewpoint Labs <span class='year'></span></p>
+                    <div class="container-icons">
+                        <div class="b-discord" onclick="window.open('https://discord.gg/ga8XHFKQ', '_self');"></div>
+                        <div class="b-telegram" onclick="window.open('https://t.me/bluelightworlds', '_self');"></div>
+                        <div class="b-twitter" onclick="window.open('http://twitter.com/bluelightworlds', '_self');"></div>
+                        <div class="b-instagram" onclick="window.open('', '_self');"></div>
+                        <div class="b-youtube" onclick="window.open('', '_self');"></div>
+                        <img class='b-extension' src='./src/img/extension.png' alt=''/>
+                        <a href="./privacy.html" class="description privacy">Privacy</a>
+                    </div>
+                </div>
+            </section>
+            <main>
+                <div class="container">
+                    <div class="animate__animated animate__zoomInDown b-top-Imgcontainer">
+                        <img class='b-spring' src="./src/img/spring.png" alt=''/>
+                        <img class='b-cassette' src="./src/img/cassette.png" alt=''/>
+                    </div>
+                    <div class="b-top-container">
+                        <p class="title main-title">
+                            WELCOME TO MULTIVERSE OF BLUELIGHT
+                        </p>
+                        <p class="description main-text">
+                            The world is on its turning point. Corporations rule the world and the market is divided between them. There is no space to grow, possibilities are limited.
+                        </p>
+                        <img class='animate__animated animate__zoomInDown b-dumbbell' src="./src/img/dumbbell.png" alt=''/>
+                        <img class='animate__animated animate__zoomInDown b-armchair' src="./src/img/armchair.png" alt=''/>
+                    </div>
+                    <div style="position: relative;">
+                        <img class='animate__animated animate__zoomInDown b-basket ' src="./src/img/basket.png" alt=''/>
+                        <img class='card-pic' src="./src/img/card-pic-min.png" alt=''/>
+                        <img class="b-cube" src="./src/img/cube-min.png"alt="" />
+                        <img class="b-cube-mobile-animate" src="./src/img/cube-min.png"alt="" />
+                    </div>
+                    <div class="b-cube-container">
+                        <div class="container-add-text">
+                            <p class="description">
+                                Bluelight corporation has decided to expand the market by creating new virtual worlds, the cubes, where young ambitious entrepreneurs can start their own technical revolution.
+                            </p>
+                            <p class="description">
+                                You can be one of them!
+                            </p>
+                        </div>
+                        <div style="position: relative;">
+                        </div>
+                    </div>
+                    <div id='subscribe'>
+                        <img src="./src/img/backgroundGreen.png" class='pc-green'/>
+                        <img class='mobile-green' src="./src/img/backgroundGreenMobile.png"/>
+                        <div class="b-form-container">
+                            
+                            <p class="title">
+                                The first Bluelight's cube is launching soon...
+                            </p>
+                            <form id="emailForm">
+                                <div class="b-form">
+                                    <input id='valueEmail' class='email' placeholder="your@email" type="text" oninput="removeEmail(event)"></input>
+                                    <a id='sendForm' class="b-btn">Let me know</a>
+                                </div>
+                                <p class="description seeSoon">See ya soon!</p>
+                                <p class="description-error" id="empty-email" style="display: none"
+                                    >Empty field
+                                </p>
+                                <p class="description-error" id="wrong-email" style="display: none"
+                                    >Wrong email
+                                </p>
+                                <p class="description-error" id="server-error" style="display: none"
+                                    >Server error
+                                </p>
+                            </form>
+                        </div>
+                        <img class="b-pliers" src="./src/img/pliers.png"/>
+                    </div>
+
+                    <div class="b-landsale-container">
+                        <img class='b-building' src="./src/img/building-min.png"/>
+                        <div class="land-text-block">
+                            <p class="title">Land Sale</p>
+                            <p class="description">It all starts in a garage, but garage has to be built somewhere, right?</p>
+                            <p class="description">Don't miss a chance to get your hands on the piece of land where future unicorns will thrive.</p>
+                            <a id='link-anchor' class="b-btn">Let me know</a>
+                        </div>
+                    </div>
+                    <div class="b-play-container">
+                        <img class='pc-purple' src="./src/img/backgroundPurple.png"/>
+                        <img class='mobile-purple' src="./src/img/backgroundPurpleMobile.png"/>
+                        <div class="container-unicorn">
+                            <div class="unicorn-text-block">
+                                <p class="title">
+                                    Play to earn
+                                </p>
+                                <p class="description">Bluelight is not only a fun game,but it also let their players earn rewards and own their in-game items.</p>
+                                <p class="description">You can learn more details in a white paper that is coming soon...</p>
+                            </div>
+                            <img class='b-uncorn' src="./src/img/unicorn-min.png" alt=''/>
+                        </div>
+                    </div>
+                    <div class="b-about">
+                        <img class='b-book' src="./src/img/book.png" alt=''/>
+                        <p class="title">
+                            About
+                        </p>
+                        <p class="description">
+                            BlueLight is a result of team efforts of Aloha Browser and Toonbox Studio.
+                        </p>
+                        <img class='b-cup' src="./src/img/cup.png" alt=''/>
+                    </div>
+                    <div class="b-company">
+                        <div class="aloha">
+                            <a href='https://alohabrowser.com/'>
+                                <img class='aloha-icon' src="./src/img/logoAloha.png"/>
+                            </a>
+                            <p class="description">aloha Browser is a fast, free, full-featured web browser that provides maximum privacy and security with more than 200M installs world wide.</p>
+                        </div>
+                        <div class="toonbox">
+                            <a href='https://toonbox.studio/'>
+                                <img class="toonbox-icon" src='./src/img/logoToonbox.png'>
+                            </a>
+                            <p class="description">Toonbox studio's portfolio includes more than 440 projects. Company's films are being broadcasted in more than 130 countries and dubbed into 29 languages.</p>
+                        </div>
+                        <div class="tmm">
+                            <a href='https://tmm.world/blog'>
+                                <img class='tmm-icon' src='./src/img/logoTmm.png' alt=''/>
+                            </a>
+                            <p class="description">Bluelight multiverse is based on a lore of Take My Muffin animation series, the first animation co-created with crypto community.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="b-social-mobile">
+                    <div class="b-discord-mobile" onclick="window.open('https://discord.gg/ga8XHFKQ', '_self');"></div>
+                    <div class="b-telegram-mobile" onclick="window.open('https://t.me/bluelightworlds', '_self');"></div>
+                    <div class="b-twitter-mobile" onclick="window.open('http://twitter.com/bluelightworlds', '_self');"></div>
+                    <div class="b-instagram-mobile" onclick="window.open('', '_self');"></div>
+                    <div class="b-youtube-mobile" onclick="window.open('', '_self');"></div>
+                </div>
+                <div class="b-footer-items">
+                    <p class="description">© Viewpoint Labs <span class='year'></span></p>
+                    <div class="container-icons-mobile">
+                        <img class='b-extension' src='./src/img/extension.png' alt=''/>
+                        <a href="./privacy.html" class="description privacy">Privacy</a>
+                    </div>
+                </div>
+                <p class="description copyright">© Viewpoint Labs <span class='year'></span></p>
+                <div class="container-icons">
+                    <div class="b-discord" onclick="window.open('https://discord.gg/ga8XHFKQ', '_self');"></div>
+                    <div class="b-telegram" onclick="window.open('https://t.me/bluelightworlds', '_self');"></div>
+                    <div class="b-twitter" onclick="window.open('http://twitter.com/bluelightworlds', '_self');"></div>
+                    <div class="b-instagram" onclick="window.open('', '_self');"></div>
+                    <div class="b-youtube" onclick="window.open('', '_self');"></div>
+                    <img class='b-extension' src='./src/img/extension.png' alt=''/>
+                    <a href="./privacy.html" class="description privacy">Privacy</a>
+                </div>
+            </footer>
+            <section class="b-alert">
+                <p class="description">
+                    By using this site, you acknowledge you have read our <a href='./privacy.html' class='link-text'>Privacy Policy</a>
+                </p>
+                <button class="b-btn" onclick="acceptCookie()">
+                    Accept
+                </button>
+            </section>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+        <script src="./src/jquery.min.js"></script>
+        <script src="./src/jScrollability.min.js"></script>
+        <script src="./src/jScrollability.js"></script>
+        <script>
+            let bAlert = document.getElementsByClassName("b-alert")[0]
+            const setCookie = (cname, cvalue, exdays) => {
+                const d = new Date();
+                d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                let expires = "expires="+ d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+            const deleteCookie = (cname) => {
+                const d = new Date();
+                d.setTime(d.getTime() + (24*60*60*1000));
+                let expires = "expires="+ d.toUTCString();
+                document.cookie = cname + "=;" + expires + ";path=/";
+            }
+            const getCookie = (cname) => {
+                let name = cname + "=";
+                let decodedCookie = decodeURIComponent(document.cookie);
+                let ca = decodedCookie.split(';');
+                for(let i = 0; i <ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            const acceptCookie = () => {
+                deleteCookie('user_cookie_consent');
+                setCookie('user_cookie_consent', 'true', 30);
+                bAlert.style.opacity = "0";
+                bAlert.style.transition = "all 0.3s";
+                setTimeout(() => {
+                    bAlert.style.display = "none";
+                }, 300);
+            }
+
+            let cookie_consent = getCookie("user_cookie_consent");
+            if (cookie_consent != ""){
+                bAlert.style.display = "none";
+            } else {
+                bAlert.style.display = "flex";
+            }
+
+        </script>
+        <script>
+            let subscribeEmail = $('#sendForm');
+            let emailForm = $('#emailForm');
+            let valueEmail = $("#valueEmail");
+            let bForm = $(".b-form")[0];
+            let seeSoon = $(".seeSoon")[0];
+            let emptyEmail = $("#empty-email");
+            let wrongEmail = $("#wrong-email");
+            let serverError = $("#server-error");
+
+            const removeEmail = (e) => {
+                let v = e.target.value;
+                if (v.length > 0 || v.trim()) {
+                    emptyEmail.hide();
+                    wrongEmail.hide();
+                    valueEmail.removeClass("error");
+                }
+                serverError.hide();
+                wrongEmail.hide();
+                valueEmail.removeClass("error");
+            };
+
+            const subscribeForm = () => {
+
+                // let emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                let emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+                if (!valueEmail.val()) {
+                    serverError.hide();
+                    wrongEmail.hide();
+                    emptyEmail.show();
+                    valueEmail.addClass("error");
+                    return;
+                }
+
+                if (!valueEmail.val().match(emailFormat)) {
+                    serverError.hide();
+                    emptyEmail.hide();
+                    wrongEmail.show();
+                    valueEmail.addClass("error");
+                    return
+                }
+
+                $.ajax({
+                    url: "/v1/bluelight_email",
+                    type: "get",
+                    dataType: "json",
+                    data: {
+                        email: valueEmail.val(),
+                    },
+                    success: (data) => {
+                        if (data) {
+                            serverError.hide();
+                            emptyEmail.hide();
+                            wrongEmail.hide();
+                            valueEmail.removeClass("error");
+                            setTimeout(() => {
+                                bForm.style.display='none'
+                                seeSoon.style.display = "block";
+                            }, 100);
+                        }
+                    },
+                    error: (data) =>{
+                        console.log(data)
+                        serverError.show();
+                    }
+                });
+            }
+
+            emailForm.on("submit", (e) => {
+                e.preventDefault();
+                subscribeForm();
+            })
+
+            subscribeEmail.on("click", (e) => {
+                e.preventDefault();
+                subscribeForm();
+            });
+        
+        </script>
+        <script>
+            const changeSize = () => {
+                let minWidth = 745;
+                let width = 1920;
+                let fontSize = 20;
+                let bodyWidth = $('html').width();
+                let multiplier = bodyWidth / width;
+                if ($('html').width() < width && $('html').width() >= minWidth)
+                fontSize = Math.floor(fontSize * multiplier);
+                if ($('html').width() < minWidth)
+                fontSize = Math.floor(fontSize * multiplier);
+                $('body').css({fontSize: fontSize+'px'});
+            }
+            $(() => {
+                changeSize()
+            });
+            $(window).resize(() => {
+                changeSize()
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                let widthPage = $(window).innerWidth();
+                if (widthPage < 745) {
+
+                    let menuSaleMobile = $("#sale-redirect")[0];
+                    let elementClicked = false;
+
+                    menuSaleMobile.addEventListener('click', () => {
+                        elementClicked = true;
+                        let landSale = $('.b-landsale-container')[0]
+                        let mobileMenu = $(".mobile-menu")[0];
+
+                        mobileMenu.classList.remove("open");
+                        body.css('overflow', 'auto')
+                        setTimeout(() => {
+                            landSale.scrollIntoView({
+                                block: "center",
+                                behavior:"smooth"
+                            })
+                        }, 200);
+                        setTimeout(() => {
+                            elementClicked = false;
+                        }, 900);
+                    }, false);
+
+                    let menuGameMobile = $("#game-redirect")[0];
+
+                    menuGameMobile.addEventListener('click', () => {
+                        elementClicked = true;
+                        let playGame = $('.b-play-container')[0]
+                        let mobileMenu = $(".mobile-menu")[0];
+                        mobileMenu.classList.remove("open");
+                        body.css('overflow', 'auto')
+                        setTimeout(() => {
+                            playGame.scrollIntoView({
+                                block: "center",
+                                behavior:"smooth"
+                            })
+                        }, 200);
+                        setTimeout(() => {
+                            elementClicked = false;
+                        }, 900);
+                    }, false);
+
+                    let menuAboutMobile = $("#about-redirect")[0];
+                    
+                    menuAboutMobile.addEventListener('click', () => {
+                        elementClicked = true;
+                        let bAboutt = $('.b-about')[0]
+                        let mobileMenu = $(".mobile-menu")[0];
+                        mobileMenu.classList.remove("open");
+                        body.css('overflow', 'auto')
+                        setTimeout(() => {
+                            bAboutt.scrollIntoView({
+                                block: "center",
+                                behavior:"smooth"
+                            })
+                        }, 200);
+                        setTimeout(() => {
+                            elementClicked = false;
+                        }, 900);
+                    }, false);
+
+                    if (Cookies.get("sale-redirect")) {
+                        elementClicked = true;
+                        let landSale = $('.b-landsale-container')[0]
+                        setTimeout(() => {
+                            landSale.scrollIntoView({
+                            block: "center",
+                            behavior:"smooth"
+                        })
+                            Cookies.remove("sale-redirect")
+                        }, 200);
+                        setTimeout(() => {
+                            elementClicked = false;
+                        }, 900);
+                    }
+
+                    if (Cookies.get("game-redirect")) {
+                        elementClicked = true;
+                        let playGame = $('.b-play-container')[0]
+                        setTimeout(() => {
+                            playGame.scrollIntoView({
+                            block: "center",
+                            behavior:"smooth"
+                        })
+                            Cookies.remove("game-redirect")
+                        }, 200);
+                        setTimeout(() => {
+                            elementClicked = false;
+                        }, 900);
+                    }
+
+                    if (Cookies.get("about-redirect")) {
+                        elementClicked = true;
+                        let bAboutt = $('.b-about')[0]
+                        setTimeout(() => {
+                            bAboutt.scrollIntoView({
+                            block: "center",
+                            behavior:"smooth"
+                        })
+                            Cookies.remove("about-redirect")
+                        }, 200);
+                        setTimeout(() => {
+                            elementClicked = false;
+                        }, 900);
+                    }
+
+                    $(window).on('scroll', () => {
+                        let cubeMobile = $(".b-cube-mobile-animate");
+                        let cardPic = $(".card-pic");
+                        let cubeContainer = $(".b-cube-container");
+                        let indentCardPic = Math.round(cardPic.get(0).getBoundingClientRect().top);
+                        let heightPage = $(window).innerHeight();
+                        let heightCubeMobile = cubeMobile.height();
+                        let indentMobileCubeTop = Math.round(cubeMobile.get(0).getBoundingClientRect().top);
+                        let indentMobileCubeBottom = Math.round(heightPage - heightCubeMobile - indentMobileCubeTop);
+
+                        if (indentCardPic < 0) {
+                            if (elementClicked !==true) {
+                                if (widthPage > 424 && widthPage < 745) {
+                                    cubeMobile.css({
+                                        'transition' : '0.6s all',
+                                        'width': '94.85em',
+                                        'height': '87em',
+                                        'top': '43em',
+                                        'right': '1.5em'
+                                    });
+                                    cubeContainer.css({
+                                        'transition' : '0.6s all',
+                                        'padding' : '80em 0 25.7em 0'
+                                    })
+                                }
+
+                                if (widthPage > 383 && widthPage <= 424) {
+                                    cubeMobile.css({
+                                        'transition' : '0.6s all',
+                                        'width': '94.85em',
+                                        'height': '87em',
+                                        'top': '43em',
+                                        'right': '-2em'
+                                    });
+                                    cubeContainer.css({
+                                        'transition' : '0.6s all',
+                                        'padding' : '80em 0 25.7em 0'
+                                    })
+                                }
+
+                                if (widthPage >= 350 && widthPage <= 383) {
+                                    cubeMobile.css({
+                                        'transition' : '0.6s all',
+                                        'width': '94.85em',
+                                        'height': '87em',
+                                        'top': '43em',
+                                        'right': '8em'
+                                    });
+                                    cubeContainer.css({
+                                        'transition' : '0.6s all',
+                                        'padding' : '80em 0 25.7em 0'
+                                    })
+                                }
+
+                                if (widthPage < 350) {
+                                    cubeMobile.css({
+                                        'transition' : '0.6s all',
+                                        'width': '94.85em',
+                                        'height': '87em',
+                                        'top': '43em',
+                                        'right': '3.5em'
+                                    });
+                                    cubeContainer.css({
+                                        'transition' : '0.6s all',
+                                        'padding' : '80em 0 25.7em 0'
+                                    })
+                                }
+                            
+                            } else {
+                                if (widthPage > 0 && widthPage < 745) {
+                                    cubeMobile.css({
+                                        'transition' : '0.6s all',
+                                        'width': '31.57em',
+                                        'height': '29em',
+                                        'top': '0',
+                                        'right': '0'
+                                    });
+                                    cubeContainer.css({
+                                        'transition' : '0.6s all',
+                                        'padding' : '17em 0 25.7em 0'
+                                    })
+                                }
+                            }
+                        }
+                        else if (indentMobileCubeBottom < 100) {
+                            if (widthPage > 424 && widthPage < 745) {
+                                cubeMobile.css({
+                                    'transition' : '0.6s all',
+                                    'width': '31.57em',
+                                    'height': '29em',
+                                    'top': '0',
+                                    'right': '0'
+                                });
+                                cubeContainer.css({
+                                    'transition' : '0.6s all',
+                                    'padding' : '17em 0 25.7em 0'
+                                })
+                            }
+
+                            if (widthPage > 383 && widthPage <= 424) {
+                                cubeMobile.css({
+                                    'transition' : '0.6s all',
+                                    'width': '31.57em',
+                                    'height': '29em',
+                                    'top': '0',
+                                    'right': '0'
+                                });
+                                cubeContainer.css({
+                                    'transition' : '0.6s all',
+                                    'padding' : '17em 0 25.7em 0'
+                                })
+                            }
+
+                            if (widthPage >= 350 && widthPage <= 383) {
+                                cubeMobile.css({
+                                    'transition' : '0.6s all',
+                                    'width': '31.57em',
+                                    'height': '29em',
+                                    'top': '0',
+                                    'right': '3em'
+                                });
+                                cubeContainer.css({
+                                    'transition' : '0.6s all',
+                                    'padding' : '17em 0 25.7em 0'
+                                })
+                            }
+
+                            if (widthPage < 350) {
+                                cubeMobile.css({
+                                    'transition' : '0.6s all',
+                                    'width': '31.57em',
+                                    'height': '29em',
+                                    'top': '0',
+                                    'right': '1.5em'
+                                });
+                                cubeContainer.css({
+                                    'transition' : '0.6s all',
+                                    'padding' : '17em 0 25.7em 0'
+                                })
+                            }
+                        
+                        }
+                    })
+                }
+            });
+        </script>
+        
+        <script>
+            let cube = $(".b-cube");
+            let cardPic = $(".card-pic");
+            $(window).on('scroll', () => {
+                let widthPage = $(window).innerWidth()
+                let indentCubeTop = Math.round(cube.get(0).getBoundingClientRect().top)
+                let indentCardPic = Math.round(cardPic.get(0).getBoundingClientRect().top)
+                if (indentCubeTop < 0) {
+                    if (widthPage >= 2500 && widthPage < 9999) {
+                        $.jScrollability([
+                            {
+                                'selector': '.b-cube',
+                                'start': 2200,
+                                'end': 2600,
+                                'fn': {
+                                    'top': {
+                                        'start': 0,
+                                        'end': 40,
+                                        'unit': 'em'
+                                        },
+                                    'width': {
+                                        'start': 30,
+                                        'end': 45,
+                                        'unit': 'em'
+                                    },
+                                    'height': {
+                                        'start': 27.5,
+                                        'end': 41.25,
+                                        'unit': 'em'
+                                    },
+                                    'transition': {
+                                        'start': 0.6,
+                                        'end': 0.6,
+                                        'unit': 's'
+                                    },
+                                    'right': {
+                                        'start': 6,
+                                        'end': -1,
+                                        'unit': 'em'
+                                    }
+                                }
+                            }
+                        ]);
+                    }
+                    if (widthPage >= 2200 && widthPage < 2499) {
+                        $.jScrollability([
+                            {
+                                'selector': '.b-cube',
+                                'start': 2200,
+                                'end': 2600,
+                                'fn': {
+                                    'top': {
+                                        'start': 0,
+                                        'end': 40,
+                                        'unit': 'em'
+                                        },
+                                    'width': {
+                                        'start': 30,
+                                        'end': 45,
+                                        'unit': 'em'
+                                    },
+                                    'height': {
+                                        'start': 27.5,
+                                        'end': 41.25,
+                                        'unit': 'em'
+                                    },
+                                    'transition': {
+                                        'start': 0.6,
+                                        'end': 0.6,
+                                        'unit': 's'
+                                    },
+                                    'right': {
+                                        'start': 4,
+                                        'end': -1,
+                                        'unit': 'em'
+                                    }
+                                }
+                            }
+                        ]);
+                    }
+                    if (widthPage >= 2000 && widthPage < 2200) {
+                        $.jScrollability([
+                            {
+                                'selector': '.b-cube',
+                                'start': 2200,
+                                'end': 2600,
+                                'fn': {
+                                    'top': {
+                                        'start': 0,
+                                        'end': 40,
+                                        'unit': 'em'
+                                        },
+                                    'width': {
+                                        'start': 30,
+                                        'end': 45,
+                                        'unit': 'em'
+                                    },
+                                    'height': {
+                                        'start': 27.5,
+                                        'end': 41.25,
+                                        'unit': 'em'
+                                    },
+                                    'transition': {
+                                        'start': 0.6,
+                                        'end': 0.6,
+                                        'unit': 's'
+                                    },
+                                    'right': {
+                                        'start': 1,
+                                        'end': -4,
+                                        'unit': 'em'
+                                    }
+                                }
+                            }
+                        ]);
+                    }
+
+                    if (widthPage >= 1800 && widthPage < 2000) {
+                        $.jScrollability([
+                            {
+                                'selector': '.b-cube',
+                                'start': 2000,
+                                'end': 2400,
+                                'fn': {
+                                    'top': {
+                                        'start': 0,
+                                        'end': 40,
+                                        'unit': 'em'
+                                        },
+                                    'width': {
+                                        'start': 30,
+                                        'end': 45,
+                                        'unit': 'em'
+                                    },
+                                    'height': {
+                                        'start': 27.5,
+                                        'end': 41.25,
+                                        'unit': 'em'
+                                    },
+                                    'transition': {
+                                        'start': 0.6,
+                                        'end': 0.6,
+                                        'unit': 's'
+                                    },
+                                    'right': {
+                                        'start': 1,
+                                        'end': -4,
+                                        'unit': 'em'
+                                    }
+                                }
+                            }
+                        ]);
+                    }
+
+                    if (widthPage >= 1500 && widthPage < 1800) {
+                        $.jScrollability([
+                            {
+                                'selector': '.b-cube',
+                                'start': 1600,
+                                'end': 1900,
+                                'fn': {
+                                    'top': {
+                                        'start': 0,
+                                        'end': 40,
+                                        'unit': 'em'
+                                        },
+                                    'width': {
+                                        'start': 30,
+                                        'end': 45,
+                                        'unit': 'em'
+                                    },
+                                    'height': {
+                                        'start': 27.5,
+                                        'end': 41.25,
+                                        'unit': 'em'
+                                    },
+                                    'transition': {
+                                        'start': 0.6,
+                                        'end': 0.6,
+                                        'unit': 's'
+                                    },
+                                    'right': {
+                                        'start': 1,
+                                        'end': -4,
+                                        'unit': 'em'
+                                    }
+                                }
+                            }
+                        ]);
+                    }
+
+                    if (widthPage >= 1300 && widthPage < 1500) {
+                        $.jScrollability([
+                            {
+                                'selector': '.b-cube',
+                                'start': 1400,
+                                'end': 1800,
+                                'fn': {
+                                    'top': {
+                                        'start': 0,
+                                        'end': 40,
+                                        'unit': 'em'
+                                        },
+                                    'width': {
+                                        'start': 30,
+                                        'end': 45,
+                                        'unit': 'em'
+                                    },
+                                    'height': {
+                                        'start': 27.5,
+                                        'end': 41.25,
+                                        'unit': 'em'
+                                    },
+                                    'transition': {
+                                        'start': 0.6,
+                                        'end': 0.6,
+                                        'unit': 's'
+                                    },
+                                    'right': {
+                                        'start': 1,
+                                        'end': -4,
+                                        'unit': 'em'
+                                    }
+                                }
+                            }
+                        ]);
+                    }
+
+                    if (widthPage >= 1000 && widthPage < 1300) {
+                        $.jScrollability([
+                            {
+                                'selector': '.b-cube',
+                                'start': 1100,
+                                'end': 1700,
+                                'fn': {
+                                    'top': {
+                                        'start': 0,
+                                        'end': 40,
+                                        'unit': 'em'
+                                        },
+                                    'width': {
+                                        'start': 30,
+                                        'end': 45,
+                                        'unit': 'em'
+                                    },
+                                    'height': {
+                                        'start': 27.5,
+                                        'end': 41.25,
+                                        'unit': 'em'
+                                    },
+                                    'transition': {
+                                        'start': 0.6,
+                                        'end': 0.6,
+                                        'unit': 's'
+                                    },
+                                    'right': {
+                                        'start': 1,
+                                        'end': -4,
+                                        'unit': 'em'
+                                    }
+                                }
+                            }
+                        ]);
+                    }
+
+                    if (widthPage >= 745 && widthPage < 1000) {
+                        $.jScrollability([
+                            {
+                                'selector': '.b-cube',
+                                'start': 900,
+                                'end': 1500,
+                                'fn': {
+                                    'top': {
+                                        'start': 0,
+                                        'end': 40,
+                                        'unit': 'em'
+                                        },
+                                    'width': {
+                                        'start': 30,
+                                        'end': 45,
+                                        'unit': 'em'
+                                    },
+                                    'height': {
+                                        'start': 27.5,
+                                        'end': 41.25,
+                                        'unit': 'em'
+                                    },
+                                    'transition': {
+                                        'start': 0.6,
+                                        'end': 0.6,
+                                        'unit': 's'
+                                    },
+                                    'right': {
+                                        'start': 1,
+                                        'end': -4,
+                                        'unit': 'em'
+                                    }
+                                }
+                            }
+                        ]);
+                    }
+                    
+                }
+            })
+        </script>
+
+        <script>
+            let closeIcon = $(".close-menu")[0];
+            let openIcon = $(".burger-menu")[0];
+            let mobileMenu = $(".mobile-menu")[0];
+            let body = $('body')
+            openIcon.addEventListener("click", () => {
+                mobileMenu.classList.add("open");
+                setTimeout(() => {
+                    body.css('overflow', 'hidden')
+                }, 100);
+                
+            });
+            closeIcon.addEventListener("click", () => {
+                mobileMenu.classList.remove("open");
+                setTimeout(() => {
+                    body.css('overflow', 'auto')
+                }, 100);
+            }, false);
+        </script>
+
+        <script>
+            let anchor = $("#link-anchor")[0];
+            anchor.addEventListener('click', () => {
+                let subscribe = $('#subscribe')[0]
+                subscribe.scrollIntoView({
+                    block: "center",
+                    behavior:"smooth"
+                })
+            }, false);
+        </script>
+
+        <script>
+            let sale = $("#sale")[0];
+            sale.addEventListener('click', () => {
+                let landSale = $('.b-landsale-container')[0]
+                landSale.scrollIntoView({
+                    block: "center",
+                    behavior:"smooth"
+                })
+            }, false);
+
+            let game = $("#game")[0];
+            game.addEventListener('click', () => {
+                let playGame = $('.b-play-container')[0]
+                playGame.scrollIntoView({
+                    block: "center",
+                    behavior:"smooth"
+                })
+            }, false);
+
+            let about = $("#about")[0];
+            about.addEventListener('click', () => {
+                let bAboutt = $('.b-about')[0]
+                bAboutt.scrollIntoView({
+                    block: "center",
+                    behavior:"smooth"
+                })
+            }, false);
+
+        </script>
+        
+        <script>
+            if (Cookies.get("sale-privacy")) {
+                let landSale = $('.b-landsale-container')[0]
+                setTimeout(() => {
+                    landSale.scrollIntoView({
+                    block: "center",
+                    behavior:"smooth"
+                })
+                    Cookies.remove("sale-privacy")
+                }, 200);
+            }
+
+            if (Cookies.get("game-privacy")) {
+                let playGame = $('.b-play-container')[0]
+                setTimeout(() => {
+                    playGame.scrollIntoView({
+                    block: "center",
+                    behavior:"smooth"
+                })
+                    Cookies.remove("game-privacy")
+                }, 200);
+            }
+
+            if (Cookies.get("about-privacy")) {
+                let bAboutt = $('.b-about')[0]
+                setTimeout(() => {
+                    bAboutt.scrollIntoView({
+                    block: "center",
+                    behavior:"smooth"
+                })
+                    Cookies.remove("about-privacy")
+                }, 200);
+            }
+        </script>
+
+        <script>
+            let year = document.getElementsByClassName("year");
+            for (let item of year) {
+                item.innerHTML = new Date().getFullYear();
+            }
+        </script>
+    </body>
+</html>
